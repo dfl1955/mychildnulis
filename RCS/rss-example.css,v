@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2015.02.28.16.15.07;	author u36656361;	state Exp;
+branches;
+next	;
+
+
+desc
+@CSS to decorate a list with an rss graphic token.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@/* 
+ $Id$
+
+ $Log$
+*/
+
+.site-feeds li:before { content:url('http://davelevy.info/TOKENS/rss-feed-icon-16.png');}
+@

@@ -1,0 +1,105 @@
+/*
+Theme Name: 	Child Nulis by DFL
+Theme URI: 	
+Author: 	Dave Levy
+Author URI: 	http://www.supakunza.com/
+Template:	nulis
+Version: 	1.0
+License: 	GNU General Public License v2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+
+ $Id: style.css,v 1.4 2015/03/03 14:31:09 u36656361 Exp $
+
+ $Log: style.css,v $
+ Revision 1.4  2015/03/03 14:31:09  u36656361
+ Added a signin button
+
+ Revision 1.3  2015/02/28 23:33:01  u36656361
+ A-Z button added
+
+ Revision 1.2  2015/02/28 22:52:01  u36656361
+ includes css for top of content and rss buttons
+ 
+*/
+
+/*-------------------------------------------------------------
+Customisation starts here                                    */
+
+/* body { background-color: #94ff94; } */
+
+/* it'd be nice to underline the links witin a paragraph */
+
+.entry-content a { text-decoration: underline; }
+.comment-list a { text-decoration: underline;  }
+
+.entry-content acronym { text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #ffc600; }
+.comment-list acronym { text-decoration: underline;  text-decoration-style: dotted; text-decoration-color: #ffc600; }
+/* This may be declared as text-decoration: underline dotted ##ffc600; */
+
+/* a { color: #FFC600; } a:link	{ color: #FFC600; } a:visited { color: #B45F04; } */
+
+.site-feeds ul  { list-style-type: none; }
+.site-feeds li:after { content:url('http://davelevy.info/TOKENS/rss-feed-icon-16.png');}
+
+/*-----------------------------------------------------*/
+
+.iconized.a-icon { background-image: url('assets/images/downarrow.png');}
+.iconized.r-icon { background-image: url('assets/images/rss1.png');}
+.iconized.i-icon { background-image: url('assets/images/a-z.png');}
+.iconized.q-icon { background-image: url('assets/images/quill.png');}
+.iconized.l-icon { background-image: url('assets/images/labourrose.png');}
+
+.arrow-icon:before {
+    width: 48px, height 48px; text-align: center; font: 3.2rem/1.5 Genericons; vertical-align: middle; display: inline-block;
+   -moz-osx-font-smoothing: grayscale; -webki-font-smoothing: antialiased;
+    content: "\f419"; }
+
+.rss-icon:before {
+    width: 48px, height 48px; text-align: center; font: 3.2rem/1.5 Genericons; vertical-align: middle; display: inline-block;
+   -moz-osx-font-smoothing: grayscale; -webki-font-smoothing: antialiased;
+    content: "\f419"; }
+
+.az-icon:before {
+    width: 48px, height 48px; text-align: center; font: 3.2rem/1.5 Genericons; vertical-align: middle; display: inline-block;
+   -moz-osx-font-smoothing: grayscale; -webki-font-smoothing: antialiased;
+    content: "\f419"; }
+
+.qu-icon:before {
+    width: 48px, height 48px; text-align: center; font: 3.2rem/1.5 Genericons; vertical-align: middle; display: inline-block;
+   -moz-osx-font-smoothing: grayscale; -webki-font-smoothing: antialiased;
+    content: "\f419"; }
+
+.lp-icon:before {
+    width: 48px, height 48px; text-align: center; font: 3.2rem/1.5 Genericons; vertical-align: middle; display: inline-block;
+   -moz-osx-font-smoothing: grayscale; -webki-font-smoothing: antialiased;
+    content: "\f419"; }
+
+.arrow-icon { width: 48px; height:48px; display: inline-block;}
+.rss-icon { width: 48px; height:48px; display: inline-block;}
+.az-icon { width: 48px; height:48px; display: inline-block;}
+.qu-icon { width: 48px; height:48px; display: inline-block;}
+.lp-icon { width: 48px; height:48px; display: inline-block;}
+
+.arrow-icon:focus {border:0;}
+.rss-icon:focus {border:0;}
+.az-icon:focus {border:0;}
+.qu-icon:focus {border:0;}
+.lp-icon:focus {border:0;}
+
+.arrow-icon-wrapper { float: left;}
+.rss-icon-wrapper { float: left;}
+.az-icon-wrapper { float: left;}
+.qu-icon-wrapper { float: left;}
+.lp-icon-wrapper { float: left;}
+
+/* let's see if we can influence the look and feel of class .jpgetrssfeed */
+
+.jpgetrssfeed a {margin-right: 4px;}
+
+/* for Orlov in the Meerkats article */
+
+a.imPop       { position:relative; z-index:20; }
+a.imPop:hover { display:inline; z-index:30;}
+a.imPop span  { display:none;}
+a.imPop:hover span { display:block; position:absolute; top:1em; left:1em; width:128px; height:128px;}
+
